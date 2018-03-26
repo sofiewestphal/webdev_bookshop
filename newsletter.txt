@@ -1,0 +1,1 @@
+[{"id":"59ba8d79719bf","name":"Gavin","lastname":"Lerner","email":"gavinlerner@hotmail.com","lat":"55.59591162771841","lng":"13.032798701897264"},{"id":"59ba8246b6436","name":"Sofie","lastname":"Westphal","email":"sofiewestphal@gmail.com","lat":"55.7290065","lng":"12.524814699999979"}]

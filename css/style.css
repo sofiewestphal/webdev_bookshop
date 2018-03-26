@@ -1,0 +1,289 @@
+/*** FONT ***/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway";
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+h2{
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+h3{
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+p {
+	font-family: "Open Sans";
+	margin-bottom: 0px;
+}
+
+button, input {
+	font-family: "Open Sans";
+}
+
+/*** GENERAL ***/
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	padding: 0 15%;
+/*	overflow: hidden;*/
+	background-image: url(../img/background6.jpg);
+	background-size: contain;
+}
+
+.pages{
+	display: none;
+	position: absolute;
+	padding: 7% 0%;
+	width: 70%;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	background-color: rgba(255,255,255,0.90);
+}
+
+/*** NAVIGATION ***/
+
+nav {
+	background-color: #e3e3e3;
+}
+
+nav ul{
+	display: flex;
+	justify-content: flex-end;
+	min-height: 80px;
+	text-decoration: none;
+	align-items: center;
+	
+}
+
+nav ul li{
+	font-family: "Raleway";
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+  	list-style-type: none;
+	width: 20%;
+	text-align: center;	
+}
+
+/*** SIGNUP PAGE ***/
+
+#pageSignup{
+	display: flex;
+}
+
+#inputAdminField{
+	border: 1px solid lightgray;
+	/*border-style: inset;*/
+	padding: 10px 10px 15px 10px;
+	color: grey;
+	font-size: 13.3333px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	
+}
+
+#inputAdminField input{
+	width: auto;
+}
+
+#inputAdminNo{
+	margin-left: 25px;
+}
+
+/*** ADMIN-USERS ***/
+
+.container{
+	width: 70%;
+	margin: auto;
+}
+
+/*.BoxUserInfo img, .BoxProductInfo img {
+	width: 200px;
+	height: auto;
+}*/
+
+
+/*** ADMIN PRODUCTS & ADMIN USERS***/
+
+
+#boxShowUsersProducts, #boxAddUsersProducts{
+	display: flex;
+	justify-content: space-between;
+}
+
+#boxAddUser, #boxAddProduct, #boxShowUsers, #boxShowProducts{
+	padding: 15px 10px 20px 10px;
+}
+
+.BoxUser, .BoxProduct {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+#boxAddUser, #boxAddProduct {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+input, #boxAddUser button, #boxAddProduct button, #boxAddUser input, #boxAddProduct input, #boxShowUsers input, #boxShowProducts input, #btnShowUsers, #btnShowProducts{
+	cursor: pointer;
+	margin-bottom: 10px;
+	padding: 10px 10px 15px 10px;
+	width: 100%;
+}
+
+button, .btnDeleteProduct, .btnDeleteUser{
+	cursor: pointer;
+	margin-bottom: 10px;
+	padding: 7px 10px 10px 10px;
+}
+
+#txtSeachProducts, #txtSeachUsers {
+	margin: 0 0 40px 0;
+}
+
+#boxEditProduct{
+	display: none;
+}
+
+.BoxUserInfo, .BoxProductInfo {
+	position: absolute;
+	width: 70%;
+    top: 25%;
+	left: 15%;
+	background-color: rgba(255,255,255,0.9);
+	border: 1px solid lightgray;
+}
+
+.BoxUserInfoFlex{
+	display: flex;
+	align-items: flex-start;
+    justify-content: space-between;
+	padding: 5%;	
+}
+
+.BoxUserInfoFlex img{
+	width: 130px;
+}
+
+.closeUserInfo{
+	padding: 5px;
+	cursor: pointer;
+}
+
+.BoxUserInfo img, .BoxProductInfo img {
+	width: 130px;
+}
+
+.BoxProductInfo{
+	padding: 10px;
+	width: 50%;
+	left: 25%;
+}
+
+#BoxProductModal{
+	width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+
+/*** PRODUCT PAGE ***/
+
+#boxShowProductsImg{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.boxProductImg{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	margin-bottom: 40px;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.productImage{
+	width: 70%;
+	height: auto;
+}
+
+.boxProductImg button {
+	width: 70%;
+    background-color: transparent;
+    border: 1px solid #239ead;
+}
+
+.boxProductImgSoldout button {
+    border: 1px solid #f5573a;
+}
+
+.boxProductImgSoldout
+.productImage{
+	filter: grayscale();
+}
+
+/*** NEWSLETTER ***/
+
+#boxNewsletter {
+	/*z-index: -1;
+	visibility: hidden;*/
+	display: none;
+/*	background-image: url(../img/background2.jpg);
+	background-size: contain;*/
+	background-color: #239ead;
+	color: white;
+	position: absolute;
+	top: calc(80px + 2%);
+	left: 25%;
+	width: 50%;
+	border: 1px solid lightgray;
+    box-shadow: 10px 10px 50px #e9e9e9;
+}
+
+#containerNewsletter{
+	margin: 15px 45px 45px 45px;
+	padding: 2%;
+/*	background-color: rgba(255,255,255,0.9);*/
+}
+
+#boxNewsletter #mapContainer {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	height: 300px;
+	width: 100%;
+}
+#containerNewsletter input{
+	border: 1px solid lightgray;
+	background: rgba(255,255,255,0.9);
+}
+
+#btnSignUpForNewsletter{
+	background: rgba(255,255,255,0.9);
+	border: 1px solid lightgray;
+}
+
+#btnNoNewsletter {
+	background: rgba(255,255,255,0.9);
+	border: 1px solid #f5573a;
+}
